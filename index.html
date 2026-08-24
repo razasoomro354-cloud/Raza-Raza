@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raza Web Studio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+header{
+background:#0b0b0b;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+box-shadow:0 0 20px cyan;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:cyan;
+text-shadow:0 0 15px cyan;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+}
+
+nav a:hover{
+color:cyan;
+}
+
+.hero{
+padding:120px 20px;
+text-align:center;
+background:linear-gradient(#050505,#111);
+}
+
+.hero h1{
+font-size:55px;
+color:cyan;
+text-shadow:0 0 20px cyan;
+}
+
+.hero p{
+margin:20px;
+font-size:20px;
+color:#ccc;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:cyan;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+box-shadow:0 0 20px cyan;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:70px 20px;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+color:cyan;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:15px;
+border:1px solid cyan;
+box-shadow:0 0 15px cyan;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.price{
+font-size:30px;
+color:cyan;
+margin:15px 0;
+}
+
+.contact{
+text-align:center;
+}
+
+input,textarea{
+width:90%;
+max-width:600px;
+padding:15px;
+margin:10px;
+background:#111;
+border:1px solid cyan;
+color:white;
+border-radius:8px;
+}
+
+button{
+padding:15px 40px;
+background:cyan;
+border:none;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+border-radius:30px;
+}
+
+footer{
+padding:20px;
+text-align:center;
+background:#111;
+margin-top:50px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 20px #25D366;
+}
+
+.whatsapp:hover{
+transform:scale(1.08);
+}
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">Raza Web Studio</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#demo">Demo</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<h1>Professional Website Development</h1>
+
+<p>Modern • Fast • Responsive • SEO Friendly Websites</p>
+
+<a class="btn" href="#contact">Hire Now</a>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Business Website</h3>
+<p>Professional websites for companies.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio</h3>
+<p>Modern portfolio websites.</p>
+</div>
+
+<div class="card">
+<h3>Landing Page</h3>
+<p>High converting landing pages.</p>
+</div>
+
+<div class="card">
+<h3>Website Redesign</h3>
+<p>Upgrade old websites.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="demo">
+
+<h2 class="title">Demo Work</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Restaurant Website</h3>
+</div>
+
+<div class="card">
+<h3>School Website</h3>
+</div>
+
+<div class="card">
+<h3>Business Website</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="pricing">
+
+<h2 class="title">Pricing</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Basic</h3>
+<div class="price">Rs 5,000</div>
+<p>1 Page Website</p>
+</div>
+
+<div class="card">
+<h3>Standard</h3>
+<div class="price">Rs 10,000</div>
+<p>5 Pages Website</p>
+</div>
+
+<div class="card">
+<h3>Premium</h3>
+<div class="price">Rs 20,000</div>
+<p>Full Business Website</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<input placeholder="Your Name">
+
+<input placeholder="Email">
+
+<textarea rows="5" placeholder="Message"></textarea>
+
+<br>
+
+<button onclick="sendMessage()">Send Message</button>
+
+</section>
+
+<footer>
+
+<h3>WhatsApp: 03127347728</h3>
+
+<p>© 2026 Raza Web Studio</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923127347728" target="_blank">WhatsApp</a>
+
+<script>
+
+function sendMessage(){
+
+alert("Thank you! We will contact you soon.");
+
+}
+
+</script>
+
+</body>
+</html>
